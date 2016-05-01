@@ -1,0 +1,116 @@
+/*get rid of default padding and margin*/
+.*{
+	margin: 0px;
+	padding: 0px;
+}
+
+header, nav, article, section, footer, aside{
+	display: block;
+}
+/*centering website*/
+.container{
+	width: 1000px;
+	margin: 0px auto;
+	background-color: orange;
+}
+
+.clear{
+	clear: both;
+}
+
+/*controlling page elements*/
+
+.content{
+	float: left;
+	width: 100%;
+	background-color: grey;
+}
+
+.header{
+	float: left;
+	background-color: blue;
+	width: 100%;
+}
+
+.left-side{
+	float: left;
+	background-color: red;
+	width: 20%;
+	height: 100%;
+}
+
+.main{
+	float: left;
+	background-color: green;
+	width: 60%;
+}
+
+.right-side{
+	float: left;
+	background-color: red;
+	width: 20%;
+	height: 100%
+}
+
+.footer{
+	float: left;
+	width: 100%;
+	background-color: blue;
+}
+
+/*controlling page content*/
+.choice_image{
+	height: 173px;
+	width: 174px;
+	position: absolute;
+	padding: 10px;
+}
+
+.image_container{
+	position: relative;
+	background-color: orange;
+	height: 600px;
+}
+
+.game_data{
+	padding: 0;
+	margin: 0;
+}
+
+/*controlling elements separately*/
+#rock{
+	margin-left: 324px;
+	margin-top: 382px;
+	z-index: 1;
+}
+
+#paper{
+	margin-left: 393px;
+	margin-top: 153px;
+	z-index: 2;
+}
+
+#scissors{
+	margin-left: 198px;
+	margin-top: 20px;
+	z-index: 3;
+}
+
+#Spock{
+	margin-left: 14px;
+	margin-top: 158px;
+	z-index: 4;
+}
+
+#lizard{
+	margin-left: 88px;
+	margin-top: 387px;
+	z-index: 5;
+}
+
+/*control element animation*/
+.choice_image:hover {
+	opacity: 0.5;
+	background-color: red;
+	border-radius: 50%;
+}

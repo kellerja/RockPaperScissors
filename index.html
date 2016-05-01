@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<link rel="stylesheet" href="styles\mainStyle.css">
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<p>header</p>
+				<nav>
+				</nav>
+			</header>
+			<div class="clear"></div>
+			<div class="content">
+				<aside class="left-side">
+					<p>left side</p>
+				</aside>
+				<section class="main">
+					<div id="announceVictor">
+					</div>
+					<div id="playButton">
+						<h1 style="display: inline;">How many rounds would you want to play?</h1>
+						<input type="button" onclick="updateMaxRounds(value)" value="11" style="display: inline;">
+						<input type="button" onclick="updateMaxRounds(value)" value="21" style="display: inline;">
+						<input type="button" onclick="startGame()" value="Start a new game">
+					</div>
+					<div id="scoreBoard">
+					</div>
+					<div class="image_container">
+						<img src="images\gestures.svg" alt="gestures_background" style="position: absolute;">
+						<img src="images\scissors.png" alt="scissors" id="scissors" class="choice_image" onclick="playRound(id)">
+						<img src="images\paper.png" alt="paper" id="paper" class="choice_image" onclick="playRound(id)">
+						<img src="images\rock.png" alt="rock" id="rock" class="choice_image" onclick="playRound(id)">
+						<img src="images\lizard.png" alt="lizard" id="lizard" class="choice_image" onclick="playRound(id)">
+						<img src="images\Spock.png" alt="Spock" id="Spock" class="choice_image" onclick="playRound(id)">
+					</div>
+					<div style="text-align: center;">
+						<h1 id="result"></h1>
+					</div>
+				</section>
+				<aside class="right-side">
+					<p>right side</p>
+				</aside>
+			</div>
+			<div class="clear"></div>
+			<footer class="footer">
+				<p>footer</p>
+			</footer>
+		</div>
+		<script src="scripts\rps.js"></script>
+	</body>
+</html>
